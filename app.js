@@ -29,3 +29,25 @@ let something; //undefined 선언되지않은상태
 console.log(amIFat);
 */
 
+/** 
+ * 배열 : 데이터를 저장하는 공간 
+ 
+
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
+
+const daysOfWekk = [mon, tue, wed, thu, fri, sat];
+
+console.log(daysOfWekk);
+console.log(daysOfWekk[5]);
+
+//add one more day to the array
+daysOfWekk.push("sun");
+
+console.log(daysOfWekk);
+*/
