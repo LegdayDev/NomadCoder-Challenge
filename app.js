@@ -223,6 +223,7 @@ function handleTitleClick(){
 title.addEventListener("click",handleTitleClick);
 */
 
+/** 마우스 관련 이벤트
 const title = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
@@ -240,3 +241,14 @@ function handleMouseLeave(){
 title.addEventListener("click", handleTitleClick);
 title.addEventListener("mouseenter",handleMouseEnter);
 title.addEventListener("mouseleave",handleMouseLeave);
+ */
+
+/** resize 이벤트
+ * 
+ */
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleWindowResize(){
+   document.body.style.backgroundColor = "tomato";
+}
+window.addEventListener("resize", handleWindowResize);
