@@ -199,8 +199,7 @@ title.style.color="blue"; // h1태그 프로퍼티를 이용하여 색깔변경
 
  */ 
 
-/** click 이벤트 */
-
+/** click 이벤트 
 const title = document.querySelector("div.hello:first-child h1");
 
 let count = 1;
@@ -222,3 +221,22 @@ function handleTitleClick(){
 }
 
 title.addEventListener("click",handleTitleClick);
+*/
+
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+   title.style.color = "blue";
+}
+
+function handleMouseEnter(){
+   title.innerText = "Mouse is here!!";
+}
+
+function handleMouseLeave(){
+   title.innerText = "Mouse is gone!";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter",handleMouseEnter);
+title.addEventListener("mouseleave",handleMouseLeave);
