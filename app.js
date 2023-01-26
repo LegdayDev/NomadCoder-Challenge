@@ -156,4 +156,18 @@ const divideResult = calculator.divide(3,5);
 const powerResult = calculator.power(3,5);
  */
 
+/** 조건문(Conditionals) if문
+ * 
+ */
 
+const age = parseInt(prompt("How old are you ?"));
+
+// console.log(isNaN(age)); NaN이면 true 반환
+
+if(isNaN(age)){
+   console.log("Please write a number!!");
+}else if(age < 18){
+   console.log("You age too young.");
+}else {
+   console.log("You can dring!");
+}
