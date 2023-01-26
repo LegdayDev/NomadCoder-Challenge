@@ -171,13 +171,31 @@ if(isNaN(age)){
  */
  
 /** JavaScript로 HTML 조작하기
-document.title = "Change_momentum";
-// documnet는 HTML 시작이다.
- */
-
 const title = document.getElementById("title"); //id명을통해 접근
 
 title.innerText = "Changed!!!"; //innerText 프로퍼티에 접근하여 변경
 
 console.log(title.id);
 console.log(title.className);
+// documnet는 HTML 시작이다.
+ */
+
+/** ClassName으로 HTML 조작하기
+const title = document.getElementsByTagName("h1");
+const tagName = document.querySelector(".hello h1"); //css처럼 쓸 수 있다.
+
+const titles = document.querySelectorAll(".hello h1"); //똑같은 classa명을 모두 가져온다
+
+const title = document.querySelector(".hello h1:first-child"); // 첫번째 h1태그만 가져온다.
+
+console.log(title.innerHTML);
+
+* 색깔 바꾸기
+const title = document.querySelector(".hello h1:first-child");
+
+console.dir(title);
+
+title.style.color="blue"; // h1태그 프로퍼티를 이용하여 색깔변경
+
+ */ 
+
