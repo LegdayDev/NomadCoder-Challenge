@@ -251,4 +251,10 @@ const title = document.querySelector("div.hello:first-child h1");
 function handleWindowResize(){
    document.body.style.backgroundColor = "tomato";
 }
+
+function handleWindowCopy(){
+   alert("copier!");
+}
+
 window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
