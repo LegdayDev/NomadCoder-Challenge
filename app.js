@@ -117,3 +117,43 @@ calculator.multiply(4,5);
 calculator.divide(4,5);
 calculator.power(4,5);
  */
+
+/** return 사용
+const myAge = 25;
+
+function changeToKoreaAge(age){
+   return age + 2; 
+};
+
+const koreaMyAge = changeToKoreaAge(myAge);
+
+console.log(koreaMyAge);
+ */
+
+/** Calculator 리턴사용
+const calculator = {
+   plus : function(a,b){
+      return (a+b);
+   },
+   minus : function(a,b){
+      return(a-b);
+   },
+   multiply : function(a,b){
+      return(a*b);
+   },
+   divide : function(a,b){
+      return(a/b);
+   },
+   power : function(a,b){
+      return(a**b);
+   },
+};
+
+const plusResult = calculator.plus(3,5);
+const minusResult = calculator.minus(3,5);
+const multiplyResult = calculator.multiply(3,5);
+const divideResult = calculator.divide(3,5);
+const powerResult = calculator.power(3,5);
+ */
+
+
