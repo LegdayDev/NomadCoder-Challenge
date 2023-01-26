@@ -92,4 +92,28 @@ player.sayHello("Messi");
 
  */
 
+/** 계산기 객체
+const calculator = {
+   plus : function(a,b){
+      console.log(a+b);
+   },
+   minus : function(a,b){
+      console.log(a-b);
+   },
+   multiply : function(a,b){
+      console.log(a*b);
+   },
+   divide : function(a,b){
+      console.log(a/b);
+   },
+   power : function(a,b){
+      console.log(a**b);
+   },
+};
 
+calculator.plus(4,5);
+calculator.minus(4,5);
+calculator.multiply(4,5);
+calculator.divide(4,5);
+calculator.power(4,5);
+ */
