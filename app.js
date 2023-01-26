@@ -157,9 +157,6 @@ const powerResult = calculator.power(3,5);
  */
 
 /** 조건문(Conditionals) if문
- * 
- */
-
 const age = parseInt(prompt("How old are you ?"));
 
 // console.log(isNaN(age)); NaN이면 true 반환
@@ -171,3 +168,16 @@ if(isNaN(age)){
 }else {
    console.log("You can dring!");
 }
+ */
+ 
+/** JavaScript로 HTML 조작하기
+document.title = "Change_momentum";
+// documnet는 HTML 시작이다.
+ */
+
+const title = document.getElementById("title"); //id명을통해 접근
+
+title.innerText = "Changed!!!"; //innerText 프로퍼티에 접근하여 변경
+
+console.log(title.id);
+console.log(title.className);
