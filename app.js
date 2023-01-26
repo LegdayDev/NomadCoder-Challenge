@@ -243,9 +243,7 @@ title.addEventListener("mouseenter",handleMouseEnter);
 title.addEventListener("mouseleave",handleMouseLeave);
  */
 
-/** resize 이벤트
- * 
- */
+/** resize , copy 이벤트
 const title = document.querySelector("div.hello:first-child h1");
 
 function handleWindowResize(){
@@ -258,3 +256,19 @@ function handleWindowCopy(){
 
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
+ */
+
+/** Connetcion 이벤트(wifi연결확인)
+ * 
+ */
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleWindowOffline(){
+   alert("SOS no WIFI");
+}
+
+function handleWindowOnline(){
+   alert("WIFI is good!!");
+}
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
