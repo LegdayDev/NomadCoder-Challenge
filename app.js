@@ -65,3 +65,31 @@ player.points = 77; // 변경도 가능.
 console.log(player);
 
  */
+
+
+/**
+ * Function(함수) 사용법
+ * 선언방법
+function sayHello(nameOfPerson,age){
+   console.log("Hello My Name is "+ nameOfPerson + "I'm "+ age);
+}
+
+sayHello("Ronaldo", 38);
+sayHello("Messi", 35);
+sayHello("Son", 30);
+sayHello("Kane", 29); 
+
+ * 객체 내에서 함수 생성
+player = {
+   name : "Ronaldo",
+   sayHello : function(otherName){
+      console.log("Hello, "+otherName+" nice to meet you!");
+   }
+};
+
+console.log(player.name);
+player.sayHello("Messi");  
+
+ */
+
+
