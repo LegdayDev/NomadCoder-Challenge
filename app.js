@@ -54,33 +54,14 @@ console.log(daysOfWekk);
 
 /**
  * Object
- */
-
-/**
- * 객체 사용전
-    const playerName = "Ronaldo";
-    const playerPoint = 7;
-    const playerHandsome = true;
-    const playerFat = "little bit";
- */
-
-
-const player = {
+ const player = {
     name : "Ronaldo",
     points : 7,
     handsome : true,
     fat : false,
 };
-/**
- * 객체 사용후
-    console.log(player.name);
-    console.log(player.points);
-    console.log(player.handsome);
-    console.log(player.fat);
- */
-
-console.log(player);
-
 player.lastName = "Cristiano"; //선언만 하면 오브젝트에 추가됨.
 player.points = 77; // 변경도 가능.
 console.log(player);
+
+ */
