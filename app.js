@@ -203,12 +203,22 @@ title.style.color="blue"; // h1태그 프로퍼티를 이용하여 색깔변경
 
 const title = document.querySelector("div.hello:first-child h1");
 
-title.style.color = "blue";
-
+let count = 1;
 function handleTitleClick(){
-   console.log("title was clicked!!");
+   if(count==1){
+      title.style.color="red";
+   }
+   else if(count==2){
+      title.style.color="blue";
+   }
+   else if(count==3){
+      title.style.color="green";
+   }
+
+   count++;
+   if(count>3){
+      count=1;
+   }
 }
-
-
 
 title.addEventListener("click",handleTitleClick);
