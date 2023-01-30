@@ -259,8 +259,6 @@ window.addEventListener("copy", handleWindowCopy);
  */
 
 /** Connetcion 이벤트(wifi연결확인)
- * 
- */
 const title = document.querySelector("div.hello:first-child h1");
 
 function handleWindowOffline(){
@@ -272,3 +270,19 @@ function handleWindowOnline(){
 }
 window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
+ */
+
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+   const currentColor = h1.style.color;
+   let newColor;
+   if(currentColor === "blue"){
+      newColor = "tomato";
+   } else{
+      newColor = "blue";
+   }
+   h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick);
