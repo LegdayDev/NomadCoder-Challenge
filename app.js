@@ -1,32 +1,26 @@
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting");
+const rangeNumber = document.querySelector("#rangeNumber");
+const userNumber = document.querySelector("#userNumber");
+const gameBox = document.querySelector("#resultBox");
+const rate = document.querySelector(".rate");
+const result = document.querySelector(".result");
 
-const inputNumber = document.querySelector("#inputNumber");
+const game = document.querySelector("#game");
+function playBtn(event) {
+   event.preventDefault();
+   const user = userNumber.value;
+   const computer = Math.floor((Math.random() * rangeNumber.value)) + 1;
 
+   if (user == computer) {
+      gameBox.classList.remove("hidden");
+      rate.innerText = `You chose: ${user}, the machine chose: ${computer}`;
+      result.innerText = "You Winner!";
+   } else {
+      gameBox.classList.remove("hidden");
+      rate.innerText = `You chose: ${user}, the machine chose: ${computer}`;
+      result.innerText = "You lost!";
+   }
 
-const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY = "username";
-
-
-function onLoginSubmit(event) {
-   event.preventDefault(); //submit의 새로운창을 띄우는 기능을 막는다.
-   loginForm.classList.add(HIDDEN_CLASSNAME);
-   const username = loginInput.value;
-   localStorage.setItem(USERNAME_KEY, username); // localstorage : 브라우저에 저장되는 작은 DB ( key : value )
-   paintGreetings(username);
 }
 
-function paintGreetings(username) {
-   greeting.innerText = `Hello ${username}`;
-   greeting.classList.remove(HIDDEN_CLASSNAME);
-}
+game.addEventListener("submit", playBtn);
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
-
-if (savedUsername === null) {
-   loginForm.classList.remove(HIDDEN_CLASSNAME);
-   loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-   paintGreetings(savedUsername);
-}
