@@ -1,4 +1,4 @@
-const clock = document.querySelector("#clock");
+const clock = document.querySelector("h2#clock");
 
 function getClock() {
     const date = new Date();
@@ -11,4 +11,3 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000); // 첫번째 파라미터는 함수명, 두번째 파라미터는 ms( 1000ms 는 1s)
-
