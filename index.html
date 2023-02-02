@@ -5,23 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Momentum App</title>
 </head>
 
 <body>
-    <h1>Random Number Game</h1>
-    <form id="game">
-        <h2>Generate a number between 0 and <input id="rangeNumber" type="number" /></h2>
-
-        <h2>Guess the number &nbsp;<input id="userNumber" type="number" />&nbsp;<button type="submit">Play!</button>
-        </h2>
-        <div id="resultBox" class="hidden">
-            <div class="rate"></div>
-            <div class="result"></div>
-        </div>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <button>Log In</button>
     </form>
-    <script src="app.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/clock.js"></script>
 </body>
 
 </html>
